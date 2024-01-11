@@ -8,9 +8,9 @@ const theme = {
 		black: '#202020',
     gray: '#818d91',
     white: '#FFFFFF',
-    blue: '#75cbeb',
-    lightblue: 'rgba(167, 175, 19, 0.30)',
-    shadowblue: 'rgba(149, 152, 161, 0.75)',
+    lightgray: '#d5d8e8',
+    lightblue: 'rgba(165, 192, 217, 0.30)',
+    shadowblue: 'rgba(149, 218, 237, 0.75)',
     bgcolor: 'rgba(207, 226, 243, 0.90)',
   },
 
@@ -20,6 +20,7 @@ const theme = {
     lg: '16px',
   },
 
+	// SPACING (padding, margin)
   spacing: value => `${value * 4}px`,
 };
 

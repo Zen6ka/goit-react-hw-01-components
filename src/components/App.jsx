@@ -2,6 +2,8 @@ import user from './Profile/user.json';
 import { Profile } from './Profile/Profile';
 import { GlobalStyle } from './GlobalStyle';
 import { Container } from './Container.styled';
+import data from './Statictics/data.json';
+import { Statistics } from './Statictics/Statistics';
 
 
 export const App = () => {

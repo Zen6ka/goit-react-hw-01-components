@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.div `
-	width: 250px;
+	width: 300px;
 	margin: 0 auto;
 	gap: ${p => p.theme.spacing(8)};
 	margin-bottom: ${p => p.theme.spacing(10)};
@@ -12,7 +12,7 @@ export const CardWrapper = styled.div `
 	align-items: center;
 
 	background-color: ${p => p.theme.colors.white};
-	border: 2px solid ${p => p.theme.colors.blue};
+	border: 2px solid ${p => p.theme.colors.lightgray};
 	border-radius: ${p => p.theme.radii.md};
 	box-shadow: 3px 3px 15px 1px ${p => p.theme.colors.shadowblue};
 	-webkit-box-shadow: 3px 3px 15px 1px ${p => p.theme.colors.shadowblue};
@@ -30,7 +30,7 @@ export const UserProfile = styled.div `
 export const Avatar = styled.img`
 	width: 120px;
 	border-radius:50%;
-	border: 2px solid ${p => p.theme.colors.blue};
+	border: 2px solid ${p => p.theme.colors.lightgray};
 `;
 
 export const UserName = styled.p `
@@ -46,4 +46,40 @@ export const Tag = styled.p `
 export const Location = styled.p `
 	font-size: 20px;
 	color: ${p => p.theme.colors.gray};
+`;
+
+// Statistic section 
+
+export const StatisticsList = styled.ul`
+  background-color: ${p => p.theme.colors.lightblue};
+  width: 100%;
+  display: flex;
+`;
+
+export const StatItem = styled.li`
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: ${p => p.theme.spacing(2)};
+  padding: ${p => p.theme.spacing(5)};
+  border-top: 1px solid ${p => p.theme.colors.lightgray};
+
+  &:not(:last-child) {
+    border-right: 1px solid ${p => p.theme.colors.lightgray};
+  }
+
+  &:hover {
+    background-color: ${p => p.theme.colors.shadowblue};
+  }
+`;
+
+export const StatLabel = styled.span`
+  color: ${p => p.theme.colors.gray};
+  font-size: 14px;
+`;
+
+export const StatQuantity = styled.span`
+  font-size: 20px;
+  font-weight: 700;
 `;
