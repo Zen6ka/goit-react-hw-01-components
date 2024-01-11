@@ -17,6 +17,9 @@ export const CardWrapper = styled.div `
 	box-shadow: 3px 3px 15px 1px ${p => p.theme.colors.shadowblue};
 	-webkit-box-shadow: 3px 3px 15px 1px ${p => p.theme.colors.shadowblue};
 	-moz-box-shadow: 3px 3px 15px 1px ${p => p.theme.colors.shadowblue};
+	&:hover, &:focus {
+    border-color: ${p => p.theme.colors.shadowblue};
+  }
 `;
 
 export const UserProfile = styled.div `

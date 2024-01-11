@@ -9,7 +9,7 @@ const getRandomHexColor = props => {
 export const StatSection = styled.section`
   width: 360px;
   background-color: ${p => p.theme.colors.white};
-  border: 2px solid ${p => p.theme.colors.blue};
+  border: 2px solid ${p => p.theme.colors.gray};
   border-radius: ${p => p.theme.radii.md};
   overflow: hidden;
   display: flex;
