@@ -8,13 +8,13 @@ const getRandomHexColor = props => {
 
 export const StatSection = styled.section`
   width: 360px;
-  background-color: ${p => p.theme.colors.white};
-  border: 2px solid ${p => p.theme.colors.gray};
-  border-radius: ${p => p.theme.radii.md};
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   margin: 0 auto ${p => p.theme.spacing(10)};
+	background-color: ${p => p.theme.colors.white};
+  border: 2px solid ${p => p.theme.colors.lightgray};
+  border-radius: ${p => p.theme.radii.md};
+  overflow: hidden;
   box-shadow: 3px 3px 15px 1px ${p => p.theme.colors.shadowblue};
   -webkit-box-shadow: 3px 3px 15px 1px ${p => p.theme.colors.shadowblue};
   -moz-box-shadow: 3px 3px 15px 1px ${p => p.theme.colors.shadowblue};
@@ -25,9 +25,9 @@ export const StatTitle = styled.h2`
   padding: ${p => p.theme.spacing(8)} 0;
   font-size: 20px;
   font-weight: 700;
+	text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-align: center;
 `;
 
 export const StatList = styled.ul`
@@ -46,7 +46,7 @@ export const StatListItem = styled.li`
   background-color: ${getRandomHexColor};
 
   &:hover {
-    background-color: ${p => p.theme.colors.blue};
+    background-color: ${p => p.theme.colors.shadowblue};
   }
 `;
 

@@ -5,7 +5,7 @@ export const TransactionTable = styled.table`
   width: 100%;
   margin: 0 auto;
   background-color: ${p => p.theme.colors.white};
-  border: 2px solid ${p => p.theme.colors.blue};
+  border: 2px solid ${p => p.theme.colors.gray};
   border-radius: ${p => p.theme.radii.md};
   overflow: hidden;
   border-collapse: collapse;
