@@ -23,7 +23,7 @@ export const TableHead = styled.thead`
 
 export const TableColumn = styled.tr`
   &:nth-child(2n) {
-    background-color: ${p => p.theme.colors.turquoise};
+    background-color: ${p => p.theme.colors.shadowblue};
   }
   &:hover {
     background-color: ${p => p.theme.colors.turquoise};
