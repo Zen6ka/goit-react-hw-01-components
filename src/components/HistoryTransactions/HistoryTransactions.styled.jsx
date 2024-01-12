@@ -26,7 +26,7 @@ export const TableColumn = styled.tr`
     background-color: ${p => p.theme.colors.lightblue};
   }
   &:hover {
-    background-color: ${p => p.theme.colors.shadowblue};
+    background-color: ${p => p.theme.colors.turquoise};
   }
 `;
 
